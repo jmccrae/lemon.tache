@@ -1,0 +1,8 @@
+entries <<<
+  prefix lemon: <http://www.monnet-project.eu/lemon#>
+  select ?entry ?form {
+    ?entry a lemon:LexicalEntry ;
+      lemon:canonicalForm ?canForm .
+    ?canForm lemon:writtenRep ?form
+  }
+>>>
